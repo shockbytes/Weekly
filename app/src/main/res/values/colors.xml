@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorAccent">#FF5252</color>
+
+    <color name="primary_background">#eee</color>
+
+    <color name="colorTabToday">#F44336</color>
+    <color name="colorTabWeek">#03A9F4</color>
+    <color name="colorTabMe">#8BC34A</color>
+
+    <color name="information_chip_background_color">#22000000</color>
+
+</resources>

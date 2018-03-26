@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_day_container_new_entry"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorAccent"
+    android:visibility="gone">
+
+    <ImageButton
+        android:id="@+id/newitem_imgbtn_close"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/ic_close" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/newitem_til_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/newitem_imgbtn_close"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:theme="@style/AccentInputLayout">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/newitem_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="Title"
+            android:singleLine="true"
+            android:textColor="@android:color/primary_text_dark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/newitem_til_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newitem_til_title"
+        android:layout_toLeftOf="@+id/newitem_imgbtn_close"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:theme="@style/AccentInputLayout">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/newitem_txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="Description"
+            android:singleLine="true"
+            android:textColor="@android:color/primary_text_dark" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageButton
+        android:id="@+id/newitem_imgbtn_reminder"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newitem_til_description"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/ic_reminder" />
+
+    <ImageButton
+        android:id="@+id/newitem_imgbtn_important"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newitem_til_description"
+        android:layout_toRightOf="@+id/newitem_imgbtn_reminder"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/ic_important" />
+
+    <ImageButton
+        android:id="@+id/newitem_imgbtn_label"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newitem_til_description"
+        android:layout_toRightOf="@+id/newitem_imgbtn_important"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/ic_label" />
+
+    <Button
+        android:id="@+id/newitem_btn_next"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newitem_imgbtn_reminder"
+        android:layout_toLeftOf="@+id/newitem_btn_done"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:text="Next"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/newitem_btn_done"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/newitem_imgbtn_reminder"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:text="Done"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

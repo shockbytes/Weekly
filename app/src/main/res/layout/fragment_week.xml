@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:weightSum="1.0">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:id="@+id/fragment_week_rv_days"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:id="@+id/fragment_week_rv_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8" />
+
+</LinearLayout>
+
+

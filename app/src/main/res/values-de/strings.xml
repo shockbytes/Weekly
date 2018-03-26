@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weekly</string>
+    <string name="tab_me">Ich</string>
+    <string name="tab_today">Heute</string>
+    <string name="tab_week">Woche</string>
+    <string name="activity_login_btn_login">Anmelden</string>
+    <string name="activity_login_txt_greeting">Willkommen zu Weekly</string>
+
+    <string-array name="week_days_short">
+        <item>MO</item>
+        <item>DI</item>
+        <item>MI</item>
+        <item>DO</item>
+        <item>FR</item>
+        <item>SA</item>
+        <item>SO</item>
+    </string-array>
+
+</resources>

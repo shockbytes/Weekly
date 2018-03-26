@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weekly</string>
+    <string name="app_version" translatable="false">0.4 beta</string>
+
+    <string name="tab_today">Today</string>
+    <string name="tab_week">Week</string>
+    <string name="tab_me">Me</string>
+
+    <string name="user_greeting" formatted="false">Hi %s,</string>
+    <string name="user_amount_todo" formatted="false">You have %d open tasks for today!</string>
+    <string name="activity_login_btn_login">Login</string>
+    <string name="activity_login_txt_greeting">Welcome to Weekly</string>
+
+    <string-array name="week_days_short">
+        <item>MO</item>
+        <item>TU</item>
+        <item>WE</item>
+        <item>TH</item>
+        <item>FR</item>
+        <item>SA</item>
+        <item>SU</item>
+    </string-array>
+
+</resources>

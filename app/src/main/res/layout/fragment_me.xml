@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background">
+
+    <RelativeLayout
+        android:id="@+id/fragment_me_headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_background"
+        android:clipToPadding="false"
+        android:elevation="4dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/fragment_me_img_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:id="@+id/fragment_me_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/fragment_me_img_avatar"
+            android:layout_toRightOf="@+id/fragment_me_img_avatar"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/fragment_me_txt_amount_todos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_me_txt_name"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/fragment_me_img_avatar"
+            android:layout_toRightOf="@+id/fragment_me_img_avatar"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/fragment_me_view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fragment_me_img_avatar"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:background="#DDD"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_me_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
+
+
