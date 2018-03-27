@@ -1,4 +1,4 @@
-package at.shockbytes.weekly.task.model
+package at.shockbytes.weekly.planning.model
 
 import com.google.common.base.MoreObjects
 import com.google.firebase.database.DataSnapshot

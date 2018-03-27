@@ -10,7 +10,7 @@ import android.view.animation.Animation
 import android.widget.EditText
 import android.widget.RelativeLayout
 import at.shockbytes.weekly.R
-import at.shockbytes.weekly.task.model.Task
+import at.shockbytes.weekly.planning.model.Task
 import at.shockbytes.weekly.view.ViewManager
 import butterknife.ButterKnife
 import butterknife.OnClick

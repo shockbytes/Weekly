@@ -3,6 +3,8 @@ package at.shockbytes.weekly.ui.fragment
 import android.os.Bundle
 import at.shockbytes.weekly.R
 import at.shockbytes.weekly.dagger.AppComponent
+import at.shockbytes.weekly.planning.RoadmapManager
+import javax.inject.Inject
 
 /**
  * Author:  Martin Macheiner
@@ -12,8 +14,19 @@ class RoadmapFragment : BaseFragment() {
 
     override val layoutId = R.layout.fragment_roadmap
 
+    @Inject
+    protected lateinit var roadmapManager: RoadmapManager
+
     override fun setupViews() {
         // TODO
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        roadmapManager.roadmap().subscribe { roadmap ->
+            
+        }
     }
 
     override fun injectToGraph(appComponent: AppComponent) {

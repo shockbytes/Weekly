@@ -9,7 +9,7 @@ import android.widget.TextView
 import at.shockbytes.util.adapter.BaseAdapter
 import at.shockbytes.util.adapter.ItemTouchHelperAdapter
 import at.shockbytes.weekly.R
-import at.shockbytes.weekly.task.model.Task
+import at.shockbytes.weekly.planning.model.Task
 import kotterknife.bindView
 
 class TaskAdapter(context: Context, extData: List<Task>)

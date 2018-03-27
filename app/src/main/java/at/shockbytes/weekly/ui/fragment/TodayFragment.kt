@@ -13,8 +13,8 @@ import at.shockbytes.util.adapter.BaseItemTouchHelper
 import at.shockbytes.weekly.R
 import at.shockbytes.weekly.adapter.TaskAdapter
 import at.shockbytes.weekly.dagger.AppComponent
-import at.shockbytes.weekly.task.TaskManager
-import at.shockbytes.weekly.task.model.Task
+import at.shockbytes.weekly.planning.TaskManager
+import at.shockbytes.weekly.planning.model.Task
 import kotterknife.bindView
 import javax.inject.Inject
 
