@@ -3,13 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:title="Logout"
-        android:id="@+id/menu_main_logout"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/action_account"
+        android:title="@string/menu_main_account"
+        android:icon="@drawable/ic_account"
+        app:showAsAction="always" >
+
+        <menu>
+            <item
+                android:id="@+id/action_logout"
+                android:title="@string/logout"
+                app:showAsAction="never" />
+        </menu>
+    </item>
 
     <item
-        android:title="Settings"
-        android:id="@+id/menu_main_settings"
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
         app:showAsAction="never" />
 
 </menu>

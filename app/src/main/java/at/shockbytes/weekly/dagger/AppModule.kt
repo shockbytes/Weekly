@@ -5,6 +5,8 @@ import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import at.shockbytes.weekly.task.FirebaseTaskManager
 import at.shockbytes.weekly.task.TaskManager
+import at.shockbytes.weekly.user.FirebaseUserManager
+import at.shockbytes.weekly.user.UserManager
 import com.google.firebase.database.FirebaseDatabase
 import dagger.Module
 import dagger.Provides
@@ -28,6 +30,13 @@ class AppModule(private val app: Application) {
     fun provideTaskManager(firebase: FirebaseDatabase): TaskManager {
         return FirebaseTaskManager(firebase)
     }
+
+    @Provides
+    @Singleton
+    fun provideUserManager(): UserManager {
+        return FirebaseUserManager(app.applicationContext)
+    }
+
 
 
 }

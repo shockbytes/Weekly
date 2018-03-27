@@ -1,7 +1,7 @@
 package at.shockbytes.weekly.dagger
 
 import at.shockbytes.weekly.ui.activity.MainActivity
-import at.shockbytes.weekly.ui.fragment.PersonalFragment
+import at.shockbytes.weekly.ui.fragment.RoadmapFragment
 import at.shockbytes.weekly.ui.fragment.TodayFragment
 import at.shockbytes.weekly.ui.fragment.WeekFragment
 import dagger.Component
@@ -21,6 +21,6 @@ interface AppComponent {
 
     fun inject(fragment: WeekFragment)
 
-    fun inject(fragment: PersonalFragment)
+    fun inject(fragment: RoadmapFragment)
 
 }

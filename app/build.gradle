@@ -5,6 +5,8 @@ apply plugin: 'kotlin-android-extensions'
 
 def supportVersion = "27.0.2"
 def firebaseVersion = "11.8.0"
+def daggerVersion = "2.14.1"
+def butterknifeVersion = "8.8.1"
 
 android {
     compileSdkVersion 27
@@ -16,6 +18,8 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -27,6 +31,8 @@ android {
 
 dependencies {
 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
     implementation "com.android.support:appcompat-v7:$supportVersion"
     implementation "com.android.support:support-v4:$supportVersion"
     implementation "com.android.support:design:$supportVersion"
@@ -34,27 +40,31 @@ dependencies {
     implementation "com.android.support:cardview-v7:$supportVersion"
     implementation "com.android.support:palette-v7:$supportVersion"
 
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    kapt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     implementation 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT'
 
     implementation 'com.firebaseui:firebase-ui-auth:3.2.2'
     implementation "com.google.firebase:firebase-core:$firebaseVersion"
     implementation "com.google.firebase:firebase-database:$firebaseVersion"
     implementation "com.google.firebase:firebase-auth:$firebaseVersion"
-	implementation "com.google.guava:guava:24.0-android"
-	implementation "com.google.code.gson:gson:2.8.2"
 
+	implementation "com.google.dagger:dagger-android:$daggerVersion"
+	implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+	kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+	implementation "com.google.dagger:dagger:$daggerVersion"
+	kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    implementation "com.google.guava:guava:24.0-android"
+    implementation "com.google.code.gson:gson:2.8.2"
     implementation "com.github.shockbytes:ShockUtil:2.1.2"
+    implementation "com.squareup.picasso:picasso:2.5.2"
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-	implementation "com.squareup.picasso:picasso:2.5.2"
+    implementation "androidx.core:core-ktx:0.2"
+	implementation "io.reactivex.rxjava2:rxjava:2.1.10"
+	implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+    implementation 'com.robertlevonyan.view:MaterialChipView:1.2.1'
 
-	implementation "com.google.dagger:dagger-android:2.14.1"
-	implementation "com.google.dagger:dagger-android-support:2.14.1"
-	kapt "com.google.dagger:dagger-android-processor:2.14.1"
-	implementation "com.google.dagger:dagger:2.14.1"
-	kapt "com.google.dagger:dagger-compiler:2.14.1"
 }
 
 // Must be added at the bottom

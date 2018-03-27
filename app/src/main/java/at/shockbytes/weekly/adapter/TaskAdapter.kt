@@ -7,14 +7,29 @@ import android.view.ViewGroup
 import android.widget.TextView
 
 import at.shockbytes.util.adapter.BaseAdapter
+import at.shockbytes.util.adapter.ItemTouchHelperAdapter
 import at.shockbytes.weekly.R
 import at.shockbytes.weekly.task.model.Task
 import kotterknife.bindView
 
-class UserTaskAdapter(context: Context, extData: List<Task>) : BaseAdapter<Task>(context, extData.toMutableList()) {
+class TaskAdapter(context: Context, extData: List<Task>)
+    : BaseAdapter<Task>(context, extData.toMutableList()), ItemTouchHelperAdapter {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseAdapter<Task>.ViewHolder {
         return ViewHolder(inflater.inflate(R.layout.adapter_usertask, parent, false))
+    }
+
+    override fun onItemDismiss(position: Int) {
+        // TODO
+    }
+
+    override fun onItemMove(from: Int, to: Int): Boolean {
+        // TODO
+        return false
+    }
+
+    override fun onItemMoveFinished() {
+        // TODO
     }
 
     inner class ViewHolder(itemView: View) : BaseAdapter<Task>.ViewHolder(itemView) {

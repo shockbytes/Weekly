@@ -26,7 +26,7 @@ class WeekFragment : BaseFragment() {
     override fun setupViews() {
 
         // Setup days
-        val daysAdapter = WeekHeaderAdapter(context)
+        val daysAdapter = WeekHeaderAdapter(context!!)
         recyclerViewDays.isNestedScrollingEnabled = false
         recyclerViewDays.layoutManager = headerLayoutManager
         recyclerViewDays.adapter = daysAdapter
